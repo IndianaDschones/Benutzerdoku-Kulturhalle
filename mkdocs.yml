@@ -1,0 +1,43 @@
+site_name: Benutzerdoku Kulturhalle
+site_description: Benutzerdokumentation für die Kulturhalle
+site_author: IndianaDschones
+repo_url: https://github.com/IndianaDschones/Benutzerdoku-Kulturhalle
+repo_name: IndianaDschones/Benutzerdoku-Kulturhalle
+
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Zum dunklen Modus wechseln
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Zum hellen Modus wechseln
+
+plugins:
+  - search:
+      lang: de
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
